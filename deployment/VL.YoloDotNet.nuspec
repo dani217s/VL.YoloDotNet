@@ -10,15 +10,15 @@
 		<version>0.1.0</version>
 		<description>VL porting of YoloDotNet</description>
 		<title>VL.YoloDotNet</title>
-		<authors>DS21, limeart</authors>
+		<authors>DS21, Limeart</authors>
 		<!-- Optional elements -->
         <!-- ... -->		
-		<!-- <owners>DS21</owners> -->
-		<!-- <projectUrl>https://github.com/vvvv/VL.OpenCV</projectUrl> -->
+		<owners>DS21</owners>
+		<projectUrl>https://github.com/dani217s/VL.YoloDotNet</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<summary>A VL wrapper for YoloDotNet</summary>
 		<description>YoloDotNet for VL</description>
-		<!-- <copyright>Copyright © 2022 by vvvv group. All rights reserved.</copyright> -->
+		<!-- <copyright>Copyright © 2024 by Daniele Suffritti. All rights reserved.</copyright> -->
 		<tags>VL, YoloV8, YoloV10, computervision, video, detection, recognition, pose detection, classification, OBB detection,ml, ml.net</tags>
 		<license type="expression">GPL-3.0-only</license>
 		<dependencies>
@@ -28,21 +28,10 @@
     </metadata>
     <!-- Optional 'files' node -->
 	<files>
-		<!-- <file src="..\lib\net472\VL.OpenCV.dll" target="lib\net472\" exclude="" /> -->
-		<!-- <file src="..\lib\dx11\**" target="lib\dx11\" exclude="" /> -->
-		<!-- <file src="..\*.vl" target="" exclude="" /> -->
-		<!-- <file src="..\vvvv\**" target="vvvv\" exclude="" /> -->
-		<!-- <file src="..\help\**" target="help\" exclude="" /> -->
-		<!-- <file src="..\content\haarcascades\*.xml" target="content\haarcascades" /> -->
-		<!-- <file src="..\content\calibrations\*.xml" target="content\calibrations" /> -->
-		<!-- <file src="..\content\fiducials\*.*" target="content\fiducials" /> -->
-		<!-- <file src="..\content\assets\*.*" target="content\assets" /> -->
-		<!-- <file src="..\README.md" target="docs\" /> -->
-		<!-- <file src="nugeticon.png" target="icon\" /> -->
-		<file src="..\lib\**" target="lib\" exclude="" />
+		<file src="..\README.md" target="docs\" />
+		<file src="nugeticon.png" target="icon\" />
+		<!-- <file src="..\lib\**" target="lib\" exclude="" /> -->
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\help\**" target="help\" exclude="" />
-		<file src="nugeticon.png" target="icon\" />
-		<file src="..\README.md" target="docs\" />
 	</files>
 </package>
