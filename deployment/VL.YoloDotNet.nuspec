@@ -7,7 +7,7 @@
         <!-- <description></description> -->
         <!-- <authors></authors> -->
 		<id>VL.YoloDotNet</id>
-		<version>0.1.0</version>
+		<version>0.1.0-alpha</version>
 		<description>VL porting of YoloDotNet</description>
 		<title>VL.YoloDotNet</title>
 		<authors>DS21, Limeart</authors>
