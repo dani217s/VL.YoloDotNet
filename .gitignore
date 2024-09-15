@@ -6,6 +6,8 @@
 bin/
 obj/
 .vs/
+lib/
+runtimes/
 packages/
 lib/net461/
 appveyor/nuget.exe

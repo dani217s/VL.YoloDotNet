@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HM4wTkn3dUHPH7EETEDEvX" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HM4wTkn3dUHPH7EETEDEvX" LanguageVersion="2024.6.7-0145-g7866bdf1e8" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0145-g7866bdf1e8" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -1008,7 +1008,7 @@
               <ControlPoint Id="CQ4PTx8mPaTMeiZsPjkfDA" Bounds="284,1057" Alignment="Bottom" />
             </Node>
             <Pad Id="VrzZE59mRc6LdbHQJ0vcm5" Comment="" Bounds="519,1105,385,321" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="524,618,75,26" Id="I2jx0TxmIdoP9QRtzYWExv">
+            <Node Bounds="650,490,75,26" Id="I2jx0TxmIdoP9QRtzYWExv">
               <p:NodeReference LastCategoryFullName="YoloDotNet.Models.KeyPointOptions" LastDependency="YoloDotNet.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="KeyPointOptions" />
@@ -1016,7 +1016,7 @@
               </p:NodeReference>
               <Pin Id="OBTJfbiW1dgMN2s0lYgxDD" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="S8Vv6NH2SxFMYRQlecCQXN" Comment="Draw Confidence" Bounds="891,130,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <Pad Id="S8Vv6NH2SxFMYRQlecCQXN" Comment="Draw Confidence" Bounds="785,511,35,35" ShowValueBox="true" isIOBox="true" Value="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -2843,6 +2843,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FeIPrCKlP37PKbBbFNjYj9" Location="YoloDotNet" Version="2.0.0" />
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0145-g7866bdf1e8" />
+  <NugetDependency Id="D6b4u48VUq4Oi6oERlezpM" Location="Microsoft.ML.OnnxRuntime.DirectML" Version="1.19.2" />
+  <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.1" />
+  <PlatformDependency Id="Da0DwGJVqc2QMEDhaZWiPq" Location="./lib/YoloDotNet.dll" />
 </Document>
