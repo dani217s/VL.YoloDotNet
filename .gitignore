@@ -2,6 +2,9 @@
 # .v4p backup files
 *~.xml
 
+#no source in this version
+src/
+
 # Dynamic plugins .dll
 bin/
 obj/

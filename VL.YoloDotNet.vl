@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HM4wTkn3dUHPH7EETEDEvX" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HM4wTkn3dUHPH7EETEDEvX" LanguageVersion="2024.6.7-0148-g892efc0a20" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0148-g892efc0a20" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -2844,5 +2844,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="FeIPrCKlP37PKbBbFNjYj9" Location="YoloDotNet" Version="2.0.0" />
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0148-g892efc0a20" />
+  <NugetDependency Id="Ih17u5SimPWMzqGLz27Iaa" Location="Microsoft.ML.OnnxRuntime.Gpu.Windows" Version="1.17.3" />
 </Document>
