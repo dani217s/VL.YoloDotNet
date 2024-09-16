@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="H7E1PGs1FfTNRmcrSQJ52Q" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="H7E1PGs1FfTNRmcrSQJ52Q" LanguageVersion="2024.6.7-0145-g7866bdf1e8" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2024.6.7-0145-g7866bdf1e8" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -108,10 +108,11 @@
             <Pin Id="G6dBTAzOZo1PWWIy5Dxskn" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Fav0ZLDPbugPjHCvGi0jL9" Name="Image" Kind="InputPin" />
             <Pin Id="KdHvopUATigMCXq1CSmrMZ" Name="ModelPath" Kind="InputPin" />
-            <Pin Id="T5E6lZUqdf7P4kh9GjZWv0" Name="Cuda" Kind="InputPin" />
-            <Pin Id="EZDte5Fj3eVLW8YSt9r0TH" Name="PrimeGpu" Kind="InputPin" />
             <Pin Id="A14Lo6yVSFZMprfZBaqFAz" Name="Output" Kind="OutputPin" />
             <Pin Id="HRXUglzIMXzL2Cr1hgl23d" Name="OutputDraws" Kind="OutputPin" />
+            <Pin Id="BdAVaEpqQqWOKiIjTtBtzu" Name="Cuda" Kind="InputPin" IsHidden="true" />
+            <Pin Id="M3gNXbaxl4qNVduXTwm1UM" Name="PrimeGpu" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Jjk6CBNBHhCOWF8eAGTxQi" Name="GpuId" Kind="InputPin" />
             <Pin Id="UueF0wZi928MJTnt0r0zKO" Name="Confidence" Kind="InputPin" />
             <Pin Id="JCmZunZA0gINCSoKmNftSC" Name="Iou" Kind="InputPin" />
           </Node>
@@ -133,7 +134,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2024.6.7-0136-ga34ff89f71" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2024.6.7-0145-g7866bdf1e8" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2024.6.7-0145-g7866bdf1e8" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>
