@@ -6,7 +6,7 @@
 bin/
 obj/
 .vs/
-lib/
+#lib/
 runtimes/
 packages/
 lib/net461/
