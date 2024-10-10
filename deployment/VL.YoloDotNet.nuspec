@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <!-- Required elements-->
 		<id>VL.YoloDotNet</id>
 		<version>0.1.0-alpha</version>
-		<description>VL wrapper of YoloDotNet</description>
+		<description>YoloDotNet for VL</description>
 		<title>VL.YoloDotNet</title>
 		<authors>DS21, Limeart</authors>
 		<!-- Optional elements -->
@@ -13,14 +13,13 @@
 		<projectUrl>https://github.com/dani217s/VL.YoloDotNet</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<summary>A VL wrapper for YoloDotNet</summary>
-		<description>YoloDotNet for VL</description>
 		<copyright>Copyright © 2024 by DS21. All rights reserved.</copyright>
 		<tags>VL, YoloV8, YoloV10, computervision, video, detection, recognition, pose detection, classification, OBB detection,ml, ml.net</tags>
 		<license type="expression">GPL-3.0-only</license>
 		<dependencies>
 			<dependency id="YoloDotNet" version="2.0.0" />
 			<dependency id="Microsoft.ML.OnnxRuntime.DirectML" version=" 1.19.2" />
-			<dependency id="Microsoft.AI.DirectML" Version="1.15.1" />			
+			<dependency id="Microsoft.AI.DirectML" version="1.15.1" />			
 		</dependencies>
     </metadata>
     <!-- Optional 'files' node -->
