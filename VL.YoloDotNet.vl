@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="AuE2Fpk4MazLW96NHxTEgx" LanguageVersion="2024.6.7-0177-ge02e8501bb" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0177-ge02e8501bb" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="AuE2Fpk4MazLW96NHxTEgx" LanguageVersion="2024.6.7-0185-g7d063e105d" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2024.6.7-0185-g7d063e105d" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="YoloDotNet" CanvasType="FullCategory">
       <!--
@@ -4446,7 +4446,7 @@
               <Pin Id="M8a6Xz1cNmMPVaM93oIxD0" Name="Insert" Kind="InputPin" />
               <Pin Id="NB9LIOum2ISPei3g8UDFrm" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="EYHmaOqZ3PvQYoR08GSTBu" Comment="Frame Count" Bounds="853,630,35,15" ShowValueBox="true" isIOBox="true" Value="10">
+            <Pad Id="EYHmaOqZ3PvQYoR08GSTBu" Comment="Frame Count" Bounds="883,628,35,15" ShowValueBox="true" isIOBox="true" Value="10">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -4510,6 +4510,40 @@
             <ControlPoint Id="IQhr80Ac3BHK9kQoaaijja" Bounds="897,496" />
             <ControlPoint Id="Tp6nSHKwI9gNwjHYvMVmBC" Bounds="1113,178" />
             <ControlPoint Id="CynuEHgp5neQGcLlWiYgeC" Bounds="325,371" />
+            <Node Bounds="127,184,73,120" Id="Thuqul8NeCYQETj4PI95eU">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="Ia8uaIiy4y6O3fJG6VD3BP" Name="Condition" Kind="InputPin" />
+              <Patch Id="K4CCe0Qq8bkL9l9C5818iV" ManuallySortedPins="true">
+                <Patch Id="FlacXG243b6QAplAWyEbGD" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="K5Rm5rmGAA1PW3RFd7G8lL" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="139,207,47,26" Id="UmJX7UaaLSyQDW2PJucx8y">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Unwrapped.SKImage" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="SKImage" />
+                    <Choice Kind="OperationCallFlag" Name="Info" />
+                  </p:NodeReference>
+                  <Pin Id="Ex5XNMeekCRMMpCMGFTigG" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OPJ9H6oQoCxMha1KP8MPu4" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Gee6rCe0cx1MqnmplG9dab" Name="Info" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="141,248,47,26" Id="MHGcdJpsnR9QWIQMyznCzJ">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Unwrapped.SKImage" LastDependency="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="SKImage" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="HoOr1k6bDA7MrLPGPsXRJd" Name="Info" Kind="InputPin" />
+                  <Pin Id="TptlppiqaJ6PxFf0ZI9tTY" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="E8sHLHMFvjdPyArxQzeN3f" Bounds="143,190" Alignment="Top" />
+              <ControlPoint Id="PKWsA6RBlQQM6NazWq9Hwz" Bounds="143,298" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="TJdjV7tFas1MqYogTXhNFI" Bounds="131,142" />
           </Canvas>
           <Patch Id="HhEBPtjdVANLiXTgLXv3e6" Name="Create" />
           <Patch Id="VGQsXbhn0ygLU3BesqOGtP" Name="Update" ManuallySortedPins="true">
@@ -4536,6 +4570,7 @@
             <Pin Id="D3UdEvAnYztMm4ZrAhIDIs" Name="Process Execution Frame Rate" Kind="OutputPin" Visibility="Optional" />
             <Pin Id="KmaApTYns7qLfRyR5JnWRx" Name="Process Execution Frame Rate Avg" Kind="OutputPin" Visibility="Optional" />
             <Pin Id="RBOfUGcTiooMRSYl5QURmu" Name="Draw Results" Kind="InputPin" DefaultValue="True" Visibility="Optional" />
+            <Pin Id="TofuRBac474PWOft8Q7E88" Name="DrawOnlySegmentationMap" Kind="InputPin" />
             <Pin Id="Km2MhY9CD2oQUeoC1x76UG" Name="Draw Confidence" Kind="InputPin" DefaultValue="True" Visibility="Optional" />
             <Pin Id="Cf1LqX47y0hLTKIhMWtlyN" Name="Draw Segment" Kind="InputPin" />
           </Patch>
@@ -4561,7 +4596,6 @@
           <Link Id="Cjd54Mtx8InOIj8HpdS6Sd" Ids="VWUAAkgz2fHPmQAZNZl3eh,P7dp6ZchWJoMNuUkKdvWTZ" />
           <Link Id="PHZVsaE2Hu1MCioRiHXb9L" Ids="SrxpWgqfwQCQIxp9uR9k9j,EPUCjKyDjRRMJV4I1EWKNw" />
           <Link Id="BiiguPhSq3zNu9lmVa8lIG" Ids="VWUAAkgz2fHPmQAZNZl3eh,Lp9tNnO49NsL2BoZgFiNSr" />
-          <Link Id="Cuvd5XI5PrOMo2CVDE8q0O" Ids="LvgyPGBzyxuNYUWz9XuVSP,Q90J862DPazM7BwpSIOLoE" />
           <Link Id="K2CkNnoKeVlMRAYlo9S1Ee" Ids="RNijSCoKIE9O3O5iL9BJJ1,IRU5BDODYPZLxcQU29yimZ" IsHidden="true" />
           <Link Id="UfIRuWM87RYQCVHQ0DMzBh" Ids="PGxjalEBkAZMEMn9ndSZMb,OJqufnngyE1OwpalcMnzAn" IsHidden="true" />
           <Slot Id="PidPu0e2IOSN7wqibxKWSY" Name="TriggerExecution" />
@@ -4615,6 +4649,14 @@
           <Link Id="PgZILH7kjFaO08wqO5kfdK" Ids="VN29Bbp7j8cOVKHj1Z4CoY,B5uO7ANJmOANLxCrLsGkbB" />
           <Link Id="AM3KXS62zIePrpj8OaQdtd" Ids="Cf1LqX47y0hLTKIhMWtlyN,CynuEHgp5neQGcLlWiYgeC" IsHidden="true" />
           <Link Id="SdQ0mvYwUmhNcAjf2StUhj" Ids="CynuEHgp5neQGcLlWiYgeC,BKKfFLxRUY7NCqsn6JkMah" />
+          <Link Id="KV4Kw0nAWIJLPSP5KF1p2w" Ids="E8sHLHMFvjdPyArxQzeN3f,PKWsA6RBlQQM6NazWq9Hwz" IsFeedback="true" />
+          <Link Id="ODyZbrhbVozO711hw1xmSK" Ids="E8sHLHMFvjdPyArxQzeN3f,Ex5XNMeekCRMMpCMGFTigG" />
+          <Link Id="KVThgl9R6uYMzcBQ77tDvQ" Ids="Gee6rCe0cx1MqnmplG9dab,HoOr1k6bDA7MrLPGPsXRJd" />
+          <Link Id="DVzJqkfeCkAOGoWlRoLyY5" Ids="TofuRBac474PWOft8Q7E88,TJdjV7tFas1MqYogTXhNFI" IsHidden="true" />
+          <Link Id="HoTLcCYcqXwOfvCcNPfqF8" Ids="TJdjV7tFas1MqYogTXhNFI,Ia8uaIiy4y6O3fJG6VD3BP" />
+          <Link Id="KYKltMLcNY2PSVbf3iSUyA" Ids="TptlppiqaJ6PxFf0ZI9tTY,PKWsA6RBlQQM6NazWq9Hwz" />
+          <Link Id="IRnBR1n3L61NhsijvhQwgb" Ids="LvgyPGBzyxuNYUWz9XuVSP,E8sHLHMFvjdPyArxQzeN3f" />
+          <Link Id="Bb7HOjUSBpFNFc6AYjRxuz" Ids="PKWsA6RBlQQM6NazWq9Hwz,Q90J862DPazM7BwpSIOLoE" />
         </Patch>
       </Node>
       <!--
@@ -5116,7 +5158,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0177-ge02e8501bb" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2024.6.7-0185-g7d063e105d" />
   <NugetDependency Id="D6b4u48VUq4Oi6oERlezpM" Location="Microsoft.ML.OnnxRuntime.DirectML" Version="1.19.2" />
   <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.1" />
   <PlatformDependency Id="Da0DwGJVqc2QMEDhaZWiPq" Location="./lib/YoloDotNet.dll" />
