@@ -21,6 +21,8 @@
 			<dependency id="Microsoft.ML.OnnxRuntime.DirectML" version=" 1.19.2" />
 			<dependency id="Microsoft.AI.DirectML" version="1.15.1" />			
 		</dependencies>
+		<icon>icon\nugeticon.png</icon>
+		<readme>docs\README.md</readme>
     </metadata>
     <!-- Optional 'files' node -->
 	<files>
@@ -30,5 +32,7 @@
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\vl\**" target="vl\" exclude="" />
 		<file src="..\help\**" target="help\" exclude="" />
+		<file src="..\help\assets\Media\**" target="help\assets\Media\" exclude="" />		
+		<file src="..\help\assets\Models\**" target="help\assets\Models\" exclude="" />		
 	</files>
 </package>
