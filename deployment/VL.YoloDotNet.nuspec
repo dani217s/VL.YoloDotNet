@@ -2,13 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <!-- Required elements-->
-        <!-- <id></id> -->
-        <!-- <version></version> -->
-        <!-- <description></description> -->
-        <!-- <authors></authors> -->
 		<id>VL.YoloDotNet</id>
 		<version>0.1.0-alpha</version>
-		<description>VL porting of YoloDotNet</description>
+		<description>VL wrapper of YoloDotNet</description>
 		<title>VL.YoloDotNet</title>
 		<authors>DS21, Limeart</authors>
 		<!-- Optional elements -->
@@ -18,20 +14,22 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<summary>A VL wrapper for YoloDotNet</summary>
 		<description>YoloDotNet for VL</description>
-		<!-- <copyright>Copyright © 2024 by Daniele Suffritti. All rights reserved.</copyright> -->
+		<copyright>Copyright © 2024 by DS21. All rights reserved.</copyright>
 		<tags>VL, YoloV8, YoloV10, computervision, video, detection, recognition, pose detection, classification, OBB detection,ml, ml.net</tags>
 		<license type="expression">GPL-3.0-only</license>
 		<dependencies>
 			<dependency id="YoloDotNet" version="2.0.0" />
-			<!-- <dependency id="Microsoft.ML.OnnxRuntime.Gpu" version=" 1.17.3" /> -->
+			<dependency id="Microsoft.ML.OnnxRuntime.DirectML" version=" 1.19.2" />
+			<dependency id="Microsoft.AI.DirectML" Version="1.15.1" />			
 		</dependencies>
     </metadata>
     <!-- Optional 'files' node -->
 	<files>
 		<file src="..\README.md" target="docs\" />
-		<file src="nugeticon.png" target="icon\" />
-		<!-- <file src="..\lib\**" target="lib\" exclude="" /> -->
+		<file src="..\icon\nugeticon.png" target="icon\" />
+		<file src="..\lib\**" target="lib\" exclude="" />
 		<file src="..\*.vl" target="" exclude="" />
+		<file src="..\vl\**" target="vl\" exclude="" />
 		<file src="..\help\**" target="help\" exclude="" />
 	</files>
 </package>
