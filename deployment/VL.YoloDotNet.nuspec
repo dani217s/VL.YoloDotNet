@@ -31,8 +31,6 @@
 		<file src="..\lib\**" target="lib\" exclude="" />
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\vl\**" target="vl\" exclude="" />
-		<file src="..\help\**" target="help\" exclude="" />
-		<file src="..\help\assets\Media\**" target="help\assets\Media\" exclude="" />		
-		<file src="..\help\assets\Models\**" target="help\assets\Models\" exclude="" />		
+		<file src="..\help\**" target="help\" exclude="" />	
 	</files>
 </package>

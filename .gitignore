@@ -18,4 +18,4 @@ appveyor/nuget.exe
 /.vl/*
 
 
-assets/
+#assets/
