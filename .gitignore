@@ -4,13 +4,12 @@
 
 _bkp&test/
 
-#no source in this version
-src/
-
 # Dynamic plugins .dll
 bin/
 obj/
 .vs/
+#lib/
+runtimes/
 packages/
 lib/net461/
 appveyor/nuget.exe

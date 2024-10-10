@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="UU7zBrmMSflO3clgBHXPwZ" LanguageVersion="2024.6.7-0134-g2529e1bb95" Version="0.128">
+  <NugetDependency Id="EVa6F4xRkUUNi5qZkpMW4g" Location="VL.CoreLib" Version="2024.6.7-0134-g2529e1bb95" />
+  <Patch Id="MmXYRlprocFOCGOilAjQ6X">
+    <Canvas Id="HkcOsxoeczRLkSzxJzKyhF" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ DirectML_Loader ************************
+
+-->
+      <Node Name="DirectML_Loader" Bounds="267,157" Id="I7QQwrHDVYrM6Zp3heEIAG">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
+            <Choice Kind="MutableInterfaceType" Name="IStartup" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="OZQvJXTeeG9Mis7h0cgPtW">
+          <Canvas Id="QqyX5oeUxfAQBA2kXpmkDG" CanvasType="Group">
+            <Node Bounds="403,225,88,26" Id="GjKLgAqS0UKNtZTK5UFP9u">
+              <p:NodeReference LastCategoryFullName="System.Application.AppHost" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetPackagePath" />
+              </p:NodeReference>
+              <Pin Id="Dx1QDGASEkWMJurWYvZsEZ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="F2AVEjevLbGPjgXbnaEaMH" Name="Package Id" Kind="InputPin" DefaultValue="Microsoft.AI.DirectML" />
+              <Pin Id="VzvWVdqVeA4Mn9CjTx3j86" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="R40wm2Be1jYN19yE0g6WyV" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="475,273,65,19" Id="DJT3ytzxcHYPjq9OlRHWSZ">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="AUwqwcEPK5HNX2CUgDGtm8" Name="X" Kind="InputPin" />
+              <Pin Id="R72tJeU1qc9NTOqxuhafvz" Name="Result" Kind="OutputPin" />
+              <Pin Id="GLHHMnnuJzmPf3lhX9nXRU" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="475,304,202,267" Id="RMteR0ebGipPNfnAxRflmW">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <FullNameCategoryReference ID="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="Lr08KLawqaYQGHeixV9JJT" Name="Condition" Kind="InputPin" />
+              <Patch Id="GM481q9NzAZLBoOAxmvpBY" ManuallySortedPins="true">
+                <Patch Id="Gs88TqRezgeNSoXWkjegHr" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Tij3FqqQLvaMN96bXf2BSb" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="487,532,53,19" Id="FHv3SVzXiDrNQb1cvWf4rJ">
+                  <p:NodeReference LastCategoryFullName="System.Runtime.InteropServices.NativeLibrary" LastDependency="System.Runtime.InteropServices.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="NativeLibrary" />
+                    <Choice Kind="OperationCallFlag" Name="TryLoad" />
+                    <PinReference Kind="InputPin" Name="Library Path" />
+                  </p:NodeReference>
+                  <Pin Id="TSUi8MD9B3tO6Ro5AZ3XSh" Name="Library Path" Kind="InputPin" />
+                  <Pin Id="RvDBbvYnaqLPqtkY5Lnqrj" Name="Result" Kind="OutputPin" />
+                  <Pin Id="DyYGrswBrSDPESW27O1L29" Name="Handle" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="487,468,65,19" Id="C0Cy6IqGKZmNeu41izLKK3">
+                  <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="MakePath" />
+                  </p:NodeReference>
+                  <Pin Id="HwZbZMulr4MO1o3Qpd48Ut" Name="Path" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="JIk0FLGoYs8QPIcP4li65T" Name="Input" Kind="InputPin" />
+                  <Pin Id="USdpwx3jPRuNKWrypl644e" Name="Input 2" Kind="InputPin" DefaultValue="bin" />
+                  <Pin Id="HErzPxsvFTwOdwwJDswecs" Name="Output" Kind="OutputPin" />
+                  <Pin Id="GX9TCVIJG8IQNSiruZQPCH" Name="Input 3" Kind="InputPin" DefaultValue="x64-win" />
+                  <Pin Id="Nz3M4lvymMDMGmDlKwmYfJ" Name="Input 4" Kind="InputPin" DefaultValue="DirectML.dll" />
+                </Node>
+                <Node Bounds="487,499,55,19" Id="IkLczkPaLHRPRqef6MDX5K">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="System.Conversion" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="CDh48Mq4xhlQdRh7zvNqKA" Name="Input" Kind="InputPin" />
+                  <Pin Id="Qqv9m4wzDYGMwpumciyY6x" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="559,327,106,19" Id="Vmo77Io4TlEMEXXxZbuN4x">
+                  <p:NodeReference LastCategoryFullName="System.Runtime.InteropServices.RuntimeInformation" LastDependency="System.Runtime.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="RuntimeInformation" />
+                    <Choice Kind="OperationCallFlag" Name="ProcessArchitecture" />
+                  </p:NodeReference>
+                  <Pin Id="DgtJ7WyrMDQON1uZB24Vhx" Name="Process Architecture" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="559,361,55,19" Id="JzMAhELwgP7NaQFDNIksvE">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="Tt0Jh6LZZ3rPspOUmCBGUw" Name="Input" Kind="InputPin" />
+                  <Pin Id="Bk3wPx3X1yEPEixEokJinz" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="559,400,55,26" Id="TFRujuAfewkMeKZ3JaLl2a">
+                  <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Primitive.String" />
+                    <Choice Kind="OperationCallFlag" Name="ToLower" />
+                  </p:NodeReference>
+                  <Pin Id="VjC6Kug31J3MRV46aY88Wv" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="CDiZ75kV10dNgP6Gb5MCHK" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="559,439,25,19" Id="J5Igpy1B42LQY5AOk8esjy">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Math" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                  </p:NodeReference>
+                  <Pin Id="Qz0mSUT5OK6N5d9lF6Vrkl" Name="Input" Kind="InputPin" />
+                  <Pin Id="IDhwhheRQfKM6apvsg9Ggv" Name="Input 2" Kind="InputPin" DefaultValue="-win" />
+                  <Pin Id="TjdHwECZKgGQYSkJbpbMSl" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="CXiPpZU03yRMuuz2eTpUDn" Comment="Package Id" Bounds="488,198,114,18" ShowValueBox="true" isIOBox="true" Value="Microsoft.AI.DirectML">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LTJC0vr94WsPcqjNqPQ0jx" Bounds="559,538,344,19" ShowValueBox="true" isIOBox="true" Value="&lt;- From reference to System.Runtime.InteropServices.dll">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <Patch Id="DRsV5Hc4LJJOGFUcshJOAe" Name="Create" />
+          <ProcessDefinition Id="AMCyXjlrPDANcBannme6Yk" IsHidden="true">
+            <Fragment Id="As2CkmOcXXZPQ8mZbsQnmd" Patch="DRsV5Hc4LJJOGFUcshJOAe" Enabled="true" />
+            <Fragment Id="StGcTB7OXxoM6QAS7sTnmh" Patch="FzTvS6FTCHQLLcGwtFjBpy" />
+          </ProcessDefinition>
+          <Patch Id="FzTvS6FTCHQLLcGwtFjBpy" Name="Configure" ParticipatingElements="GjKLgAqS0UKNtZTK5UFP9u">
+            <Pin Id="DJXpr5rNVfCNXHLA2NfvVJ" Name="App Host" Kind="InputPin" />
+          </Patch>
+          <Link Id="EQ1CMNh45sJOvV9skpXGUA" Ids="R40wm2Be1jYN19yE0g6WyV,AUwqwcEPK5HNX2CUgDGtm8" />
+          <Link Id="BUr0mKyrdTvNIRjfzMGBvW" Ids="R40wm2Be1jYN19yE0g6WyV,JIk0FLGoYs8QPIcP4li65T" />
+          <Link Id="C1huXm3KTDaQcnofhVOpGT" Ids="HErzPxsvFTwOdwwJDswecs,CDh48Mq4xhlQdRh7zvNqKA" />
+          <Link Id="JMZqs87lREFOT0SG62yHpE" Ids="Qqv9m4wzDYGMwpumciyY6x,TSUi8MD9B3tO6Ro5AZ3XSh" />
+          <Link Id="E0KDQsr8FvHN9MABqLZLsR" Ids="R72tJeU1qc9NTOqxuhafvz,Lr08KLawqaYQGHeixV9JJT" />
+          <Link Id="TV1oSlNqNC5QJ41WjfV1nW" Ids="CXiPpZU03yRMuuz2eTpUDn,F2AVEjevLbGPjgXbnaEaMH" />
+          <Link Id="RwWe3uZUNI2LvozUD1GQCL" Ids="TjdHwECZKgGQYSkJbpbMSl,GX9TCVIJG8IQNSiruZQPCH" />
+          <Link Id="Uu2hN90KD2XL4iHTAKdOgm" Ids="DgtJ7WyrMDQON1uZB24Vhx,Tt0Jh6LZZ3rPspOUmCBGUw" />
+          <Link Id="KhCvjpYwQxDOIQ3iD7X2PK" Ids="Bk3wPx3X1yEPEixEokJinz,VjC6Kug31J3MRV46aY88Wv" />
+          <Link Id="RYfKnzCrCMsLVhTw21x85g" Ids="CDiZ75kV10dNgP6Gb5MCHK,Qz0mSUT5OK6N5d9lF6Vrkl" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KS9pWDsGfbQMKBvTNGN3hi">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="UnW5mogJMeiQMQa1aUIgmw">
+        <Canvas Id="UKlrJxpZn23LbkYpV9pW3y" CanvasType="Group" />
+        <Patch Id="KviVerdFCg6Lr7t3qisX2t" Name="Create" />
+        <Patch Id="BHCgjhpM6bDOKwxWyUEsJw" Name="Update" />
+        <ProcessDefinition Id="L9I2yrN3qagQLhkVWB6hwz">
+          <Fragment Id="Dw4YfTjiqIxNUT6F3YWfq9" Patch="KviVerdFCg6Lr7t3qisX2t" Enabled="true" />
+          <Fragment Id="GpDQNbvOwAtMYsJs5nW1GH" Patch="BHCgjhpM6bDOKwxWyUEsJw" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="H6btklIyVZUL5Vak8ZHi5w" Location="System.Runtime.InteropServices" />
+  <PlatformDependency Id="Ccb8LX94xvtLGZBKy35FkB" Location="System.Runtime" />
+</Document>
