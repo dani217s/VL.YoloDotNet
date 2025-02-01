@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TBX02rErKtuLXMg4NRxPQA" LanguageVersion="2024.6.7-0177-ge02e8501bb" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2024.6.7-0177-ge02e8501bb" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TBX02rErKtuLXMg4NRxPQA" LanguageVersion="2025.7.0-0020-ge83b1ec3a8" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0020-ge83b1ec3a8" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -45,17 +45,18 @@
             <Pin Id="DxyGHqTFQOjMLzU8y3L44B" Name="Supported Formats" Kind="OutputPin" />
           </Node>
           <Pad Id="BmeBymH8TNEL8e6Nmz8CJT" Comment="" Bounds="177,380,190,132" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="437,446,125,19" Id="SCzRop4cwzvLEtOyadqLln">
+          <Node Bounds="437,446,145,19" Id="SCzRop4cwzvLEtOyadqLln">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GMQ8hraU8i3PPHAgsEDkIN" Name="Bounds" Kind="InputPin" DefaultValue="638, 34, 446, 279" IsHidden="true" />
+            <Pin Id="GMQ8hraU8i3PPHAgsEDkIN" Name="Bounds" Kind="InputPin" DefaultValue="1133, 369, 446, 279" IsHidden="true" />
             <Pin Id="Ar7Gpm6j6uyOSaEf52psq1" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="B3bCdovKA3YPFTPqMlkmXM" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="EFjVVdjtdk7LQ2qMbW8NWb" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EXLK1qRLwwtOHGuSdiUiKI" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="HNqxjFnWEcMMG8jrJf6cve" Name="Input" Kind="InputPin" />
+            <Pin Id="CBdZEsZFsNINE0rYxvHdsW" Name="Title" Kind="InputPin" />
             <Pin Id="US6plNMpHCeMsSj141DfGj" Name="Color" Kind="InputPin" />
             <Pin Id="AhxmJ0YdjFnMhGaSmCSNMQ" Name="Clear" Kind="InputPin" />
             <Pin Id="PR70oDRZl43QPAMpfD1IOX" Name="Space" Kind="InputPin" />
@@ -126,6 +127,28 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="648,365,65,19" Id="JzPu3PoObUZN8UUmYSw7QJ">
+            <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Split (Segmentation)" />
+            </p:NodeReference>
+            <Pin Id="IPDHjQeghr9MekXagU102N" Name="Input" Kind="InputPin" />
+            <Pin Id="J9xTdUkbAnmOT1Zobr8tns" Name="Name" Kind="OutputPin" />
+            <Pin Id="T18tUTHraGwOalxCEd6CD0" Name="Bounding Box" Kind="OutputPin" />
+            <Pin Id="R1htSTPzY9lM8ADDhkSfG0" Name="Confidence" Kind="OutputPin" />
+            <Pin Id="NYel60kFOCCLNU1cwGUu02" Name="Segmented Pixels" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="606,319,52,19" Id="GPYDUzMxdjGLrckVkgvBNe">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="QvmCRwsaEdHLVjPiUFstbB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DPS9MHyl5HgMLHZ9joLxvt" Name="Default Value" Kind="InputPin" />
+            <Pin Id="VUgF65uEu9uOQpCZI5atBH" Name="Index" Kind="InputPin" />
+            <Pin Id="E8bKgTGmUE2Pg1JwjHcsDB" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -142,10 +165,12 @@
         <Link Id="LPB6s3td7JjLkRWSVIyNNc" Ids="NcHmrZID5q0L0JtL400YQS,EeONYKDz1S5OLv3ry5zW92" />
         <Link Id="PIbtu8lgyfsMzFKPf1AC2m" Ids="UwPcfW2qHRDOPuxSijAyqo,BooQSdkaeCIOVkvddY00zT" />
         <Link Id="KCWsRoNs3HPPO2i8g8cjjA" Ids="MsEOuVdXV9vPoDhKovPaR8,Mhx30cm9sIxPpsyb1bCRxD" />
+        <Link Id="EhEgMpf5iHJNMx7OktaDdJ" Ids="A14Lo6yVSFZMprfZBaqFAz,QvmCRwsaEdHLVjPiUFstbB" />
+        <Link Id="Jy0ZmF5FftWMlpYSAoGp2O" Ids="E8bKgTGmUE2Pg1JwjHcsDB,IPDHjQeghr9MekXagU102N" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2024.6.7-0177-ge02e8501bb" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2024.6.7-0177-ge02e8501bb" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0020-ge83b1ec3a8" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0020-ge83b1ec3a8" />
   <NugetDependency Id="MYODEYnPVSYNG1cUqOgYDh" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>
