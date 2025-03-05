@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="C0VgZWABoZfLyRK8iunZnL" LanguageVersion="2025.7.0-0054-ge0749df292" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0054-ge0749df292" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="C0VgZWABoZfLyRK8iunZnL" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -49,7 +49,7 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RI4zGLSmbulQNANmF6BEEo" Comment="Iou" Bounds="124,255,35,15" ShowValueBox="true" isIOBox="true" Value="0.7">
+          <Pad Id="RI4zGLSmbulQNANmF6BEEo" Comment="Iou" Bounds="127,257,35,15" ShowValueBox="true" isIOBox="true" Value="0.7">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
@@ -86,7 +86,7 @@
           <Node Bounds="40,274,118,19" Id="KBG9pBQKiSbMvWb2A2Oezy">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloObbDetectionNew" />
+              <Choice Kind="ProcessAppFlag" Name="YoloObbDetection" />
             </p:NodeReference>
             <Pin Id="Vedrk73TDiDLpZsxRsuJK1" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="HPzXRPazKuaLjggj38u7Ei" Name="Image" Kind="InputPin" />
@@ -267,7 +267,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0054-ge0749df292" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0054-ge0749df292" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
   <NugetDependency Id="S14V7aXXUFCLwEwZnDCG11" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

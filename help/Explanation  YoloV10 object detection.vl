@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="H7E1PGs1FfTNRmcrSQJ52Q" LanguageVersion="2025.7.0-0054-ge0749df292" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0054-ge0749df292" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="H7E1PGs1FfTNRmcrSQJ52Q" LanguageVersion="2025.7.0-0141-g66b1009b2e" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0141-g66b1009b2e" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -44,17 +44,17 @@
             <Pin Id="GkpHel128qtLO269ForvDf" Name="Actual FPS" Kind="OutputPin" />
             <Pin Id="DxyGHqTFQOjMLzU8y3L44B" Name="Supported Formats" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ser83lEQk1DOXtFa1HaAaV" Comment="Confidence" Bounds="172,238,35,15" ShowValueBox="true" isIOBox="true" Value="0.8">
+          <Pad Id="Ser83lEQk1DOXtFa1HaAaV" Comment="Confidence" Bounds="194,250,35,15" ShowValueBox="true" isIOBox="true" Value="0.8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PuVjoNEMoozO8ZIgrIec2X" Comment="Iou" Bounds="202,266,35,15" ShowValueBox="true" isIOBox="true" Value="0.7">
+          <Pad Id="PuVjoNEMoozO8ZIgrIec2X" Comment="Iou" Bounds="225,270,35,15" ShowValueBox="true" isIOBox="true" Value="0.7">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TpnAtSJf2LvM8RDQDZImVa" Comment="Model Path" Bounds="152,200,201,17" ShowValueBox="true" isIOBox="true" Value="assets\Models\yolov10s.onnx">
+          <Pad Id="TpnAtSJf2LvM8RDQDZImVa" Comment="Model Path" Bounds="163,200,201,17" ShowValueBox="true" isIOBox="true" Value="assets\Models\yolov10s.onnx">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -71,7 +71,7 @@
           <Node Bounds="130,299,129,19" Id="TIUu3WkdLkGOqMQrggTQNy">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetectionNew" />
+              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetection" />
             </p:NodeReference>
             <Pin Id="UV4XNjPUxTyLPGOdb2UM5F" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EUugdIoETWBPXJLgnlkZ4Q" Name="Image" Kind="InputPin" />
@@ -82,12 +82,12 @@
             <Pin Id="GcPNB8xG6A6LNZyzYwTFfd" Name="Normalized Output" Kind="OutputPin" />
             <Pin Id="CrsV1myhHZEN4bdwojLY62" Name="Pixel Space Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="108,431,145,19" Id="HMYaldMY1w1OFUre0TQiZu">
+          <Node Bounds="108,450,145,19" Id="HMYaldMY1w1OFUre0TQiZu">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="IRN8YECoZOaN6brunBx3cd" Name="Bounds" Kind="InputPin" DefaultValue="660, 320, 616, 439" IsHidden="true" />
+            <Pin Id="IRN8YECoZOaN6brunBx3cd" Name="Bounds" Kind="InputPin" DefaultValue="2173, 147, 616, 439" IsHidden="true" />
             <Pin Id="LH90VELnxuoNY7Ogn2rwz6" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="NRFUtqUFgXZL6qKPWH8ojy" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FrV0l5RbR8rOvOOYtOk2oH" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -137,7 +137,7 @@
           <Pad Id="AHTXY4t0w5FLipzHOF0oDG" Comment="" Bounds="863,491,74,95" ShowValueBox="true" isIOBox="true" />
           <Pad Id="UbYbrZg2vAZQIyoisSO6r3" Comment="" Bounds="968,491,131,92" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PgtBzt5T7kKMaTR4LAorcT" Comment="" Bounds="1140,502,107,94" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="108,388,133,19" Id="MabRZ9GXKeTM6SkigjkzDZ">
+          <Node Bounds="108,410,133,19" Id="MabRZ9GXKeTM6SkigjkzDZ">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawObjectDetectionData" />
@@ -146,12 +146,13 @@
             <Pin Id="KQ66mN1U35HNEhPtnbomNN" Name="Image" Kind="InputPin" />
             <Pin Id="USacNtxcL2xPsHzzj6d3Yj" Name="Input" Kind="InputPin" />
             <Pin Id="EuX2Ng9d6VpPFRLpgh3ONJ" Name="DrawLabel" Kind="InputPin" />
-            <Pin Id="EjJJ0NHiFMFMBDExpWnSHF" Name="DrawConfidence" Kind="InputPin" />
+            <Pin Id="EjJJ0NHiFMFMBDExpWnSHF" Name="DrawConfidence" Kind="InputPin" DefaultValue="True" />
             <Pin Id="FYhLi5U1tEcNCkGuRTou28" Name="RectangleStroke" Kind="InputPin" />
-            <Pin Id="J26eNF8k8EbLzJmmFuMCQi" Name="Family Name" Kind="InputPin" />
+            <Pin Id="J26eNF8k8EbLzJmmFuMCQi" Name="Font Family Name" Kind="InputPin" DefaultValue="Verdana" />
             <Pin Id="SSomGet9COzLQbjnUg8y3B" Name="Output" Kind="OutputPin" />
             <Pin Id="Qn0PZzkPVwlM6t4LN8qa5F" Name="Draw Image" Kind="InputPin" IsHidden="true" />
             <Pin Id="AjnaDMKvbm6PXKX1b0ZOWp" Name="Aspect Ratio" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OyIVtXgO5YfNTQYYpoMATI" Name="Font Size" Kind="InputPin" />
           </Node>
           <Node Bounds="350,365,367,83" Id="KqJASeolljeMEeg7NWRSe9">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -185,8 +186,8 @@
             <ControlPoint Id="CJm6rh6jer3PGoxx01qmr5" Bounds="700,442" Alignment="Bottom" />
           </Node>
           <Pad Id="C2n5cj4r7MwQOQcwMYEG50" Comment="" Bounds="695,473,96,179" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VBOVkUcwqR6PIseKH1cZHm" Comment="" Bounds="345,475,93,180" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="T3oiGF1KsLNM5rnYj2bg3S" Comment="" Bounds="459,468,170,185" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VBOVkUcwqR6PIseKH1cZHm" Comment="" Bounds="357,480,93,180" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="T3oiGF1KsLNM5rnYj2bg3S" Comment="" Bounds="478,480,170,185" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Uslx5w1WcapQOaUxqs6PuS" Bounds="393,307,140,19" ShowValueBox="true" isIOBox="true" Value="Normalized Skia Space">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -240,7 +241,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0054-ge0749df292" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0054-ge0749df292" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0141-g66b1009b2e" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0141-g66b1009b2e" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

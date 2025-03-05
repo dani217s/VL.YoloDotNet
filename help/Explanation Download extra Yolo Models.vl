@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ra1G8zCDdhrLHN1krFra44" LanguageVersion="2025.7.0-0200-g4a7221ecd9" Version="0.128">
+  <NugetDependency Id="NrUGr6k9h9tOlnFzWuAXYf" Location="VL.CoreLib" Version="2025.7.0-0200-g4a7221ecd9" />
+  <Patch Id="Nwbuz9fd8djNp6VDafYcsR">
+    <Canvas Id="BfV5jg7OzpLPIJ0e02D0t0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="NSu5Srr0KacNSw2hkavlcY">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="L7wxINq5Ou6MJMRVAmk1al">
+        <Canvas Id="ByiBaDvObf8OiJmivOcA9H" CanvasType="Group">
+          <Node Bounds="80,161,205,19" Id="DffioXn3Q6pLm6e23j4HVM">
+            <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="YoloDotNet" />
+              <Choice Kind="ProcessAppFlag" Name="DownloadYoloModels" />
+            </p:NodeReference>
+            <Pin Id="Tyclk8GbrInOfI6SGeO2pt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SIkBceF19MFQRmq2UUkzQR" Name="StartDownload" Kind="InputPin" />
+            <Pin Id="TO1a0EyH1dENlIus3NNnSI" Name="OverWrite" Kind="InputPin" />
+            <Pin Id="VXGzy1iZpUNMwaDmPnCO6d" Name="Cancel" Kind="InputPin" />
+            <Pin Id="EhG1B3CLbqKPm9V6tOJmPC" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="OkmS9T3RhcyPQekXBEedWe" Name="CurrentFile" Kind="OutputPin" />
+            <Pin Id="J7JehcglZmRLehX0f6ERgy" Name="DownloadCondition" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Fgycqylfe2mNhJymBh5KB5" Name="Progress" Kind="OutputPin" />
+            <Pin Id="BK2hTcuRBuEQAIqzt1N2Gt" Name="Processing" Kind="OutputPin" />
+            <Pin Id="DJ1a51sbn6SL42UXZiHDrE" Name="Canceled" Kind="OutputPin" />
+            <Pin Id="E3icsYuYcsQPVn8tSLd5vQ" Name="Completed" Kind="OutputPin" />
+            <Pin Id="BHGrOgBLkQiOk3qUSHC0VH" Name="FilesList" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="B0OhYEiaUsCLHqviVRECe2" Name="UrlList" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="AGP3Pnco9B2Mg8koqqerBk" Name="Download" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="Mkq4zli86UnQayYR0pMTQ0" Name="PostDownload" Kind="InputPin" />
+          </Node>
+          <Pad Id="Sx6H8EIbFCKMhmtLZBwjzL" Comment="Canceled" Bounds="232,252,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="T6tSYJJ2FvPMFNIsVO41Eh" Comment="Completed" Bounds="282,202,35,40" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JjAkXTZX1NcPZOFAbnVgVt" Comment="StartDownload" Bounds="82,30,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GId8Sw4tfqGMwKDy8w50oj" Comment="OverWrite" Bounds="132,70,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EgtoIlZYPsxQAM77ZAoSil" Comment="Cancel" Bounds="182,110,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QcvMIVMCMIaO1ix6XS0u0F" Comment="Processing" Bounds="182,302,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RWQchKII4uJM3ro4NZpc4t" Comment="CurrentFile" Bounds="82,382,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NPl2Y9gOpsHQCicGv80U55" Comment="Progress" Bounds="132,352,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CCcM4xexaXXNicLtlVBDt5" Bounds="373,47,497,19" ShowValueBox="true" isIOBox="true" Value="With StartDownload you can download some YoloV9, YoloV10, YoloV11 models ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GmpY0DA2e9bL9T7N03bmoT" Bounds="373,79,328,19" ShowValueBox="true" isIOBox="true" Value="They wil be downloaded on YoloDotNet package folder">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GVfSFevzAF7MgQI3K0lxmT" Comment="PostDownload" Bounds="282,111,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VrYSzuCLlo5NdJGqMct2Qj" Bounds="408,200,317,21" ShowValueBox="true" isIOBox="true" Value="&lt;- Wait until the download is completed.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KegxEqEOIldOZ765CeEbsh" Bounds="222,378,336,25" ShowValueBox="true" isIOBox="true" Value="&lt;- There's usually 7 files for download">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="E3ah2yvF4HpOuTBOXlDp4I" Name="Create" />
+        <Patch Id="IvecCGmHrC0LXq4rdNHAGH" Name="Update" />
+        <ProcessDefinition Id="HC2tF8MtH4EPRZnSMd2nIY">
+          <Fragment Id="HDDJ4wTJAcbPOpXYOsxI5Q" Patch="E3ah2yvF4HpOuTBOXlDp4I" Enabled="true" />
+          <Fragment Id="UzjENotzFwWM5FhLrRDUT4" Patch="IvecCGmHrC0LXq4rdNHAGH" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="VAcYw8g37S2P0mCWEooG4m" Ids="DJ1a51sbn6SL42UXZiHDrE,Sx6H8EIbFCKMhmtLZBwjzL" />
+        <Link Id="BizmryyrZS9PSfT4JPLCVM" Ids="E3icsYuYcsQPVn8tSLd5vQ,T6tSYJJ2FvPMFNIsVO41Eh" />
+        <Link Id="C9Y5eSscDnkP8VJgirHiJu" Ids="JjAkXTZX1NcPZOFAbnVgVt,SIkBceF19MFQRmq2UUkzQR" />
+        <Link Id="PuhR5AhjcAlOkpRSBQqW5f" Ids="GId8Sw4tfqGMwKDy8w50oj,TO1a0EyH1dENlIus3NNnSI" />
+        <Link Id="HzVMLN8k4CpLt1ln1vweHD" Ids="EgtoIlZYPsxQAM77ZAoSil,VXGzy1iZpUNMwaDmPnCO6d" />
+        <Link Id="NV8eAxQzCc0N2hxqtvis93" Ids="BK2hTcuRBuEQAIqzt1N2Gt,QcvMIVMCMIaO1ix6XS0u0F" />
+        <Link Id="Vwr0JepW4lONhrSOqKSI0Q" Ids="OkmS9T3RhcyPQekXBEedWe,RWQchKII4uJM3ro4NZpc4t" />
+        <Link Id="UWIpU0M0DhWPqMUiGArWRn" Ids="Fgycqylfe2mNhJymBh5KB5,NPl2Y9gOpsHQCicGv80U55" />
+        <Link Id="AQ0LUXYTDf4LFmUrJ47bLL" Ids="GVfSFevzAF7MgQI3K0lxmT,Mkq4zli86UnQayYR0pMTQ0" />
+        <Link Id="VYwqkSLO8aENEFL0Wfwu7U" Ids="GVfSFevzAF7MgQI3K0lxmT,AGP3Pnco9B2Mg8koqqerBk" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="SZGkptRNqigOQ9rHq0MQHb" Location="VL.YoloDotNet" Version="0.0.0" />
+</Document>

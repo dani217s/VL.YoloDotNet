@@ -3,6 +3,8 @@
 *~.xml
 
 _bkp&test/
+help/assets/Models/bkp
+lib/oldVersions
 
 # Dynamic plugins .dll
 bin/

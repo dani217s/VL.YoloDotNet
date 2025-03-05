@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ilzt5ZGeUYQPpQzKqjEKYf" LanguageVersion="2025.7.0-0054-ge0749df292" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0054-ge0749df292" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ilzt5ZGeUYQPpQzKqjEKYf" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="HYVzC7hNtV0M2qe1zGfeC6">
         <Canvas Id="TKgBFM9NWmaP9WHhtejQur" CanvasType="Group">
-          <Node Bounds="109,156,123,19" Id="EJ7KN8V8PgbPgLH6uEIzsW">
+          <Node Bounds="106,187,123,19" Id="EJ7KN8V8PgbPgLH6uEIzsW">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Video" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Skia" />
@@ -28,7 +28,7 @@
             <Pin Id="AwHdolMlO4HNFKiGaLOGDn" Name="Prefer Gpu" Kind="InputPin" />
             <Pin Id="FMHSftMGYJLPzgpWLxVWdv" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="109,116,105,19" Id="E4gJRKToPTCMuv0NKC2wWk">
+          <Node Bounds="106,147,105,19" Id="E4gJRKToPTCMuv0NKC2wWk">
             <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VideoIn" />
@@ -44,7 +44,7 @@
             <Pin Id="GkpHel128qtLO269ForvDf" Name="Actual FPS" Kind="OutputPin" />
             <Pin Id="DxyGHqTFQOjMLzU8y3L44B" Name="Supported Formats" Kind="OutputPin" />
           </Node>
-          <Node Bounds="106,456,145,19" Id="SCzRop4cwzvLEtOyadqLln">
+          <Node Bounds="106,449,145,19" Id="SCzRop4cwzvLEtOyadqLln">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -69,12 +69,12 @@
             <Pin Id="RxZ5ewWNJuMNBEwnwmYszw" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="S3Phvp3UCyvLDajWgOd91A" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="JceH2hC1FP3NdjfVsrm3YL" Comment="Visible Classes" Bounds="213,274,44,15" ShowValueBox="true" isIOBox="true" Value="10">
+          <Pad Id="JceH2hC1FP3NdjfVsrm3YL" Comment="Visible Classes" Bounds="223,274,44,15" ShowValueBox="true" isIOBox="true" Value="10">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DbN44v0TuDPOD5Z2DBESYw" Bounds="161,231,373,19" ShowValueBox="true" isIOBox="true" Value="Model Path Pin can be used to select a custom model">
+          <Pad Id="DbN44v0TuDPOD5Z2DBESYw" Bounds="161,227,373,19" ShowValueBox="true" isIOBox="true" Value="Model Path Pin can be used to select a custom model">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -83,10 +83,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="131,296,140,19" Id="PS9Ld7Jon94NUrfbKb8jyI">
+          <Node Bounds="131,299,140,19" Id="PS9Ld7Jon94NUrfbKb8jyI">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloObjectClassifictionNew" />
+              <Choice Kind="ProcessAppFlag" Name="YoloObjectClassifiction" />
             </p:NodeReference>
             <Pin Id="DJyGkvgDbYLMQMFmGkUhs6" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GDgqi3YVYrJMBAAmA1mKYo" Name="Image" Kind="InputPin" />
@@ -95,7 +95,7 @@
             <Pin Id="SHQaCPHgYgcLRygH8t3Piq" Name="GpuId" Kind="InputPin" />
             <Pin Id="KewXYnmvJfUOfS39hiDohS" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="108,380,147,19" Id="NsvVFZEIiAkLj8N5UbzKc7">
+          <Node Bounds="106,394,147,19" Id="NsvVFZEIiAkLj8N5UbzKc7">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawObectClassificationData" />
@@ -114,12 +114,12 @@
             <Pin Id="LMNX221hzIFOnLbGuHvpNZ" Name="Filtered Output" Kind="OutputPin" />
             <Pin Id="FBcTHZ3oiWeMXvCbuLR9l2" Name="Aspect Ratio" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Pad Id="DywAjSp6J1MPpGCfCEipBQ" Comment="Size" Bounds="166,347,52,15" ShowValueBox="true" isIOBox="true" Value="0.1">
+          <Pad Id="DywAjSp6J1MPpGCfCEipBQ" Comment="Size" Bounds="232,345,52,15" ShowValueBox="true" isIOBox="true" Value="0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LLsKP1VgA05L321UuZeELD" Comment="Min Confidence" Bounds="254,366,35,15" ShowValueBox="true" isIOBox="true" Value="0.03">
+          <Pad Id="LLsKP1VgA05L321UuZeELD" Comment="Min Confidence" Bounds="252,370,35,15" ShowValueBox="true" isIOBox="true" Value="0.03">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -213,7 +213,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0054-ge0749df292" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0054-ge0749df292" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

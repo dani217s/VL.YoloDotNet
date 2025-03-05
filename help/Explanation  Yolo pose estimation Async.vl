@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EImdAYXBGuqMKAlYQUEDGT" LanguageVersion="2025.7.0-0054-ge0749df292" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0054-ge0749df292" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EImdAYXBGuqMKAlYQUEDGT" LanguageVersion="2025.7.0-0134-g231c36fe51" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0134-g231c36fe51" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -63,7 +63,7 @@
           <Node Bounds="101,256,349,19" Id="PJeO3Y3r6vkMRRwsOM1UXa">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloPoseEstimationNew (Async)" />
+              <Choice Kind="ProcessAppFlag" Name="YoloPoseEstimation (Async)" />
             </p:NodeReference>
             <Pin Id="HP83hnaw6aROgPNbCx0XqX" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="U0Dgxs6DenXLL028Lo171b" Name="Image" Kind="InputPin" />
@@ -98,6 +98,7 @@
             <Pin Id="JApjNQCY2NqN0zwnUQ4h3f" Name="TextSize" Kind="InputPin" />
             <Pin Id="EWKEgxmLkX6LHC2zSWJUfl" Name="Draw Image" Kind="InputPin" IsHidden="true" />
             <Pin Id="Q6SL17ht4JuMQuH6jNVRVp" Name="Min KeyPoint Confidence" Kind="InputPin" />
+            <Pin Id="I7PrVxFf2nNOogQLkYVEeH" Name="Aspect Ratio" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Pad Id="R2ezpO8pWvQNp78DRjjOEH" Comment="" Bounds="143,620,245,168" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="77,811,145,19" Id="VmT96aSm2f4PUBEBMNZKnA">
@@ -332,7 +333,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0054-ge0749df292" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0054-ge0749df292" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0134-g231c36fe51" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0134-g231c36fe51" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

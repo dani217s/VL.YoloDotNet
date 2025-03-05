@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0054-ge0749df292" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0054-ge0749df292" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -67,7 +67,7 @@
           <Node Bounds="119,254,274,19" Id="BCvUveMjQmrNm68mxL8J0t">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetectionNew (Async)" />
+              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetection (Async)" />
             </p:NodeReference>
             <Pin Id="DX9nr2su8vqQU1PjLLZn7M" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LXsq3Q27TsEMdMGrDrmfjI" Name="Image" Kind="InputPin" />
@@ -76,13 +76,13 @@
             <Pin Id="SKid1wf7A3ZMbsrxhfX9GX" Name="Iou" Kind="InputPin" />
             <Pin Id="KBJhkphn7t4O0NZ9kIXhHI" Name="GpuId" Kind="InputPin" />
             <Pin Id="NX6IYBL6qYIPcu1UgKMBXb" Name="Target Frame Rate" Kind="InputPin" />
-            <Pin Id="OyELTegXIq5LSWG5oFvE3C" Name="Yolo Task Duration" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="CNSZGEIJZAuPvoUc7gTnKW" Name="Yolo Task Duration" Kind="OutputPin" IsHidden="true" />
             <Pin Id="FH3Q3JUqn2OLuGZxquAb5M" Name="Normalized Output" Kind="OutputPin" />
             <Pin Id="K0AlTYYogaAPD5xBuOdIz8" Name="Pixel Space Output" Kind="OutputPin" />
-            <Pin Id="Ru2bkyLbwadMWN3Lxk7FfQ" Name="Yolo Task Duration Avg" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="CKP5Oeyk4RMNOLgO2Z8jGO" Name="Theoretical Max Yolo Framerate" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="P1MkWKO17s7OGbUnigtC16" Name="Process Execution Duration" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="KKZjk7nf7DKPT9ic2o9w8N" Name="Process Execution Frame Rate" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Lg3Ieizup0EO9Cs3jCrzIZ" Name="Yolo Task Duration Avg" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="EiMow7BdkYZQCplEBDBtKW" Name="Theoretical Max Yolo Framerate" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="TLscwSE7CZFPEDHJgOioaY" Name="Process Execution Duration" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="J2c7DJTvTlvP4WfqbnMM3b" Name="Process Execution Frame Rate" Kind="OutputPin" IsHidden="true" />
             <Pin Id="T63HbRI8epnNW6c5p1IzPh" Name="Process Execution Frame Rate Avg" Kind="OutputPin" />
           </Node>
           <Node Bounds="91,587,145,19" Id="R5A53JIk4ktMFR4IAL4is3">
@@ -90,7 +90,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DAFuGGo9cWlNd0wZwJ2Mk2" Name="Bounds" Kind="InputPin" DefaultValue="1301, 263, 382, 333" IsHidden="true" />
+            <Pin Id="DAFuGGo9cWlNd0wZwJ2Mk2" Name="Bounds" Kind="InputPin" DefaultValue="1542, 410, 323, 358" IsHidden="true" />
             <Pin Id="Fe727gRJHnvLGGUFmRrrGK" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="LQ0GOuulwIaNSf9nLNsYOE" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="Pxp1h3H0dVIPZrU3xsLIBt" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -236,6 +236,15 @@
             <Pin Id="RZsNnlcn0JoNzc8q1LRsGd" Name="X" Kind="OutputPin" />
             <Pin Id="PhZFqiwP6pwLtCf8BwAumT" Name="Y" Kind="OutputPin" />
           </Node>
+          <Pad Id="GUBPFwjS9EAP9yQxrZ5Jyc" Bounds="222,520,196,66" ShowValueBox="true" isIOBox="true" Value="In this way you can stretch content to the size of renderer window">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -278,7 +287,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0054-ge0749df292" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0054-ge0749df292" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>
