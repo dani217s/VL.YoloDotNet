@@ -8,24 +8,24 @@
     ".NETCoreApp,Version=v8.0": {
       "YoloDotNet/2.2": {
         "dependencies": {
-          "Microsoft.ML.OnnxRuntime.DirectML": "1.19.2",
+          "Microsoft.ML.OnnxRuntime.DirectML": "1.20.1",
           "SkiaSharp": "2.88.8"
         },
         "runtime": {
           "YoloDotNet.dll": {}
         }
       },
-      "Microsoft.AI.DirectML/1.15.1": {},
-      "Microsoft.ML.OnnxRuntime.DirectML/1.19.2": {
+      "Microsoft.AI.DirectML/1.15.2": {},
+      "Microsoft.ML.OnnxRuntime.DirectML/1.20.1": {
         "dependencies": {
-          "Microsoft.AI.DirectML": "1.15.1",
-          "Microsoft.ML.OnnxRuntime.Managed": "1.19.2"
+          "Microsoft.AI.DirectML": "1.15.2",
+          "Microsoft.ML.OnnxRuntime.Managed": "1.20.1"
         },
         "runtimeTargets": {
           "runtimes/win-arm64/native/onnxruntime.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "1.19.24.830"
+            "fileVersion": "1.20.24.1119"
           },
           "runtimes/win-arm64/native/onnxruntime.lib": {
             "rid": "win-arm64",
@@ -35,7 +35,7 @@
           "runtimes/win-x64/native/onnxruntime.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.19.24.830"
+            "fileVersion": "1.20.24.1119"
           },
           "runtimes/win-x64/native/onnxruntime.lib": {
             "rid": "win-x64",
@@ -45,7 +45,7 @@
           "runtimes/win-x86/native/onnxruntime.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.19.24.830"
+            "fileVersion": "1.20.24.1119"
           },
           "runtimes/win-x86/native/onnxruntime.lib": {
             "rid": "win-x86",
@@ -54,14 +54,14 @@
           }
         }
       },
-      "Microsoft.ML.OnnxRuntime.Managed/1.19.2": {
+      "Microsoft.ML.OnnxRuntime.Managed/1.20.1": {
         "dependencies": {
           "System.Memory": "4.5.5"
         },
         "runtime": {
-          "lib/net6.0/Microsoft.ML.OnnxRuntime.dll": {
-            "assemblyVersion": "1.19.2.0",
-            "fileVersion": "1.19.2.0"
+          "lib/net8.0/Microsoft.ML.OnnxRuntime.dll": {
+            "assemblyVersion": "1.20.1.0",
+            "fileVersion": "1.20.1.0"
           }
         }
       },
@@ -114,26 +114,26 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AI.DirectML/1.15.1": {
+    "Microsoft.AI.DirectML/1.15.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j1zJaXb6nKpYFaHLTH/jA5xr0Am1TeRUadkve63Gs1Mkg6xZiwDbXvPg4qMDRcpEZmYKzwHax53duheEz3nzAg==",
-      "path": "microsoft.ai.directml/1.15.1",
-      "hashPath": "microsoft.ai.directml.1.15.1.nupkg.sha512"
+      "sha512": "sha512-FVvIJWnT14L5cTEr8uc40mY2lAdtzcAcgsas4i4HF7EcZMr8RJyLWTCxQj1K7fi7DNykBufQe1K5HDh/oIBz0g==",
+      "path": "microsoft.ai.directml/1.15.2",
+      "hashPath": "microsoft.ai.directml.1.15.2.nupkg.sha512"
     },
-    "Microsoft.ML.OnnxRuntime.DirectML/1.19.2": {
+    "Microsoft.ML.OnnxRuntime.DirectML/1.20.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tNSSwJoPiJy92mdP6Y2Kb3JyEwxqlzfYkhbtT9QrU2XMGCyXA+Rbc07Y892rTtYBK/8btE3zWCZ3VdEYlHrtfA==",
-      "path": "microsoft.ml.onnxruntime.directml/1.19.2",
-      "hashPath": "microsoft.ml.onnxruntime.directml.1.19.2.nupkg.sha512"
+      "sha512": "sha512-IQSqKIwOGJ8azkJxqT7h/xGkjw3AKdVd/f9BfnbwQVBRZ7W5vrv8nCirNYPO0Xr3XJ27RpSzXSKIRBkiQlhjyw==",
+      "path": "microsoft.ml.onnxruntime.directml/1.20.1",
+      "hashPath": "microsoft.ml.onnxruntime.directml.1.20.1.nupkg.sha512"
     },
-    "Microsoft.ML.OnnxRuntime.Managed/1.19.2": {
+    "Microsoft.ML.OnnxRuntime.Managed/1.20.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4oNu7/L1ar3PmXNvAnary0/MbyqNkKDmisrG54QVbFoSuW1GNw1CcWDBrlYHbafo41p4/cnVQ3lF/IHuSm8quQ==",
-      "path": "microsoft.ml.onnxruntime.managed/1.19.2",
-      "hashPath": "microsoft.ml.onnxruntime.managed.1.19.2.nupkg.sha512"
+      "sha512": "sha512-+EVcEcKdq3gkw6iu8TYl2coJxfPnMi1YQc6eZ80BGNlw6mbBCxNGe6h4udDCwENYWsXFvYjoBc6412t40tl4ew==",
+      "path": "microsoft.ml.onnxruntime.managed/1.20.1",
+      "hashPath": "microsoft.ml.onnxruntime.managed.1.20.1.nupkg.sha512"
     },
     "SkiaSharp/2.88.8": {
       "type": "package",
