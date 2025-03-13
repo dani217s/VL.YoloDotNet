@@ -31,6 +31,6 @@
 		<file src="..\lib\**" target="lib\" exclude="" />
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\vl\**" target="vl\" exclude="" />
-		<file src="..\help\**" target="help\" exclude="**\yolov9*.onnx; **\yolov10*.onnx; **\yolov11*.onnx" />	
+		<file src="..\help\**" target="help\" exclude="**\yolov9*.onnx; **\yolov10*.onnx; **\yolov11*.onnx"/>	
 	</files>
 </package>
