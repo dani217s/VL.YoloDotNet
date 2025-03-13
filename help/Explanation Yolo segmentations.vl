@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvzHZ4v7pLaLMXhGehAbuD" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvzHZ4v7pLaLMXhGehAbuD" LanguageVersion="2025.7.0-0214-ge19c6f6088" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0214-ge19c6f6088" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -149,7 +149,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SBTZtdrMRfKPpr0Vh32M5R" Comment="" Bounds="510,596,152,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="SBTZtdrMRfKPpr0Vh32M5R" Comment="" Bounds="641,541,152,95" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -158,18 +158,6 @@
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
-            <p:Value>
-              <Item>1, 0.3, 0, 1</Item>
-              <Item>1, 0.90000004, 0, 1</Item>
-              <Item>0.5, 1, 0, 1</Item>
-              <Item>0, 1, 0.10000014, 1</Item>
-              <Item>0, 1, 0.70000005, 1</Item>
-              <Item>0, 0.70000005, 1, 1</Item>
-              <Item>0, 0.099999666, 1, 1</Item>
-              <Item>0.5, 0, 1, 1</Item>
-              <Item>1, 0, 0.9000001, 1</Item>
-              <Item>1, 0, 0.3000002, 1</Item>
-            </p:Value>
           </Pad>
           <Pad Id="GS6VFjvGZXxOaea64eSop2" Comment="Confidence To Alpha" Bounds="295,546,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -261,7 +249,7 @@
             <p:Value />
           </Pad>
           <Pad Id="BAQN8yruQviOntmVISurIw" SlotId="IT4fGvW19nFORuh8kboymV" Bounds="226,477" />
-          <Pad Id="E1mOivt5ltjNRT1XP4Ex38" Comment="Confidence To Color" Bounds="256,499,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="E1mOivt5ltjNRT1XP4Ex38" Comment="Confidence To Color" Bounds="256,499,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -302,10 +290,11 @@
         </Slot>
         <Link Id="N7JHjTTseEuOizPigOYvg3" Ids="BAQN8yruQviOntmVISurIw,N1qTYRQPfDjMH0jBOJnwv3" />
         <Link Id="E0ZQFbnNBWLPKaYUsBlxTd" Ids="E1mOivt5ltjNRT1XP4Ex38,EEfvHTSatzCNF8IcOZOIqk" />
+        <Link Id="OiMAjxdB2MbOzzTYDj9UMm" Ids="QJDyCzhkJ14PMniP7v95CH,SBTZtdrMRfKPpr0Vh32M5R" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0214-ge19c6f6088" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0214-ge19c6f6088" />
   <NugetDependency Id="MYODEYnPVSYNG1cUqOgYDh" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

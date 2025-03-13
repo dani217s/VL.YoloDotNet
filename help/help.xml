@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Pack>
-
-<!-- For more info see: -->
-<!-- https://thegraybook.vvvv.org/reference/extending/providing-help.html -->
-
+	<Topic title="Examples">
+		<Subtopic title="Object detection">
+			<VLDocument link="Explanation Yolo object detection.vl" tags="yolo"/>
+			<VLDocument link="Explanation Yolo object detection Async.vl" tags="yolo"/>
+			<VLDocument link="Explanation Yolo object detection Async - WithinSpace.vl" tags="yolo"/>
+		</Subtopic>
+		<Subtopic title="Pose estimation">
+			<VLDocument link="Explanation Yolo pose estimation.vl"/>
+			<VLDocument link="Explanation Yolo pose estimation Async.vl"/>
+		</Subtopic>
+		<Subtopic title="Segmentation">
+			<VLDocument link="Explanation Yolo segmentation.vl"/>
+			<VLDocument link="Explanation Yolo segmentation Async.vl"/>
+			<VLDocument link="Explanation Yolo segmentations.vl"/>
+			<VLDocument link="Explanation Yolo segmentations Async.vl"/>
+		</Subtopic>
+		<Subtopic title="Obect classification">
+			<VLDocument link="Explanation Yolo object classification.vl"/>
+			<VLDocument link="Explanation Yolo object classification Async.vl"/>
+		</Subtopic>
+		<Subtopic title="OBB detection">
+			<VLDocument link="Explanation Yolo OBB detection.vl"/>
+			<VLDocument link="Explanation Yolo OBB detection Async.vl"/>
+		</Subtopic>
+	</Topic>
+	<Topic title="Yolo V9, V10, V11 models">
+		<Subtopic title="Examples YoloV10">
+			<VLDocument link="Explanation Download extra Yolo Models.vl"/>
+			<VLDocument link="Explanation YoloV10 object detection.vl"/>
+			<VLDocument link="Explanation YoloV10 object detection Async.vl"/>
+		</Subtopic>
+	</Topic>
 </Pack>
