@@ -12,9 +12,9 @@
 		<owners>DS21</owners>
 		<projectUrl>https://github.com/dani217s/VL.YoloDotNet</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<summary>A VL wrapper for YoloDotNet</summary>
+		<summary>A VL wrapper for YoloDotNet 2.2.0</summary>
 		<copyright>Copyright © 2024 by DS21. All rights reserved.</copyright>
-		<tags>VL, YoloV8, YoloV10, computervision, video, detection, recognition, pose detection, classification, OBB detection,ml, ml.net</tags>
+		<tags>VL, YoloV8, YoloV9, YoloV10, Yolo V11 computervision, video, detection, recognition, pose detection, classification, OBB detection,ml, ml.net</tags>
 		<license type="expression">GPL-3.0-only</license>
 		<dependencies>
 			<dependency id="YoloDotNet" version="2.2.0" />
@@ -31,6 +31,6 @@
 		<file src="..\lib\**" target="lib\" exclude="" />
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\vl\**" target="vl\" exclude="" />
-		<file src="..\help\**" target="help\" exclude="yolov9*.onnx, yolov10*.onnx, yolov11*.onnx" />	
+		<file src="..\help\**" target="help\" exclude="**\yolov9*.onnx; **\yolov10*.onnx; **\yolov11*.onnx" />	
 	</files>
 </package>
