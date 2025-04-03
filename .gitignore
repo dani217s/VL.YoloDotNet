@@ -19,5 +19,8 @@ appveyor/nuget.exe
 
 /.vl/*
 
+#models v9 v11
+help/assets/Models/yolov9*.onnx
+help/assets/Models/yolov11*.onnx
 
 #assets/

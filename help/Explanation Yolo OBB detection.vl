@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="C0VgZWABoZfLyRK8iunZnL" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="C0VgZWABoZfLyRK8iunZnL" LanguageVersion="2025.7.0-0264-g15930191f6" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0264-g15930191f6" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -75,7 +75,7 @@
             <Pin Id="MRYUwOqueFvO7ILv5lPcP7" Name="Input 2" Kind="InputPin" />
             <Pin Id="IolfIeDwkmZMuwt3s1A2Ag" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="PTwL93v9vfmNeQdw75m3Vu" Bounds="9,128,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PTwL93v9vfmNeQdw75m3Vu" Bounds="9,128,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -102,7 +102,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="AfvQAItvzpyL8gTZyqlp8m" Name="Bounds" Kind="InputPin" DefaultValue="1128, 458, 616, 439" IsHidden="true" />
+            <Pin Id="AfvQAItvzpyL8gTZyqlp8m" Name="Bounds" Kind="InputPin" DefaultValue="1206, 472, 616, 439" IsHidden="true" />
             <Pin Id="VOyVjWKB27HPOq959SNUva" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="Ifuj5P3mpjKLdpJdaBt15t" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="QIzWYxCUUXENsl1juIVLEY" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -228,6 +228,14 @@
           </Node>
           <Pad Id="SInIyyaZaPoNJiRleudXG3" Comment="" Bounds="324,569,222,211" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PhfEvvppYPfOYQn7tgqa2s" Comment="" Bounds="961,476,208,254" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MWiHRqM39gJNefuuC8yozA" Comment="Prefer Gpu" Bounds="316,101,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -264,10 +272,11 @@
         <Link Id="RpoGULibZYkQSQRMHWzNeR" Ids="KTFTOxruULzM5PyOmxocKt,SInIyyaZaPoNJiRleudXG3" />
         <Link Id="LnC2j30M3boPyQmOvaIiXS" Ids="Qb8Kq66cJRCN9wnZwgoxfk,DMCdW2BKbw2PEaL5wCQV3s" />
         <Link Id="JZ0Sgr2ZdruMUPY12P0rn0" Ids="NE2OnHsVq4bPue6MYceNaP,PhfEvvppYPfOYQn7tgqa2s" />
+        <Link Id="A5AmITv5GSJPXAboOuW0c6" Ids="MWiHRqM39gJNefuuC8yozA,AwHdolMlO4HNFKiGaLOGDn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0264-g15930191f6" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0264-g15930191f6" />
   <NugetDependency Id="S14V7aXXUFCLwEwZnDCG11" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

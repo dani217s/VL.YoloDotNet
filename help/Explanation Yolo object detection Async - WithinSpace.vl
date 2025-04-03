@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0126-geaacba9216" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0126-geaacba9216" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0282-g95954a57af" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0282-g95954a57af" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -121,10 +121,11 @@
             <Pin Id="EYi8JP7Vl69Pd5E8nypG3X" Name="DrawLabel" Kind="InputPin" />
             <Pin Id="UYRszMK2knRMzY71pagbAf" Name="DrawConfidence" Kind="InputPin" />
             <Pin Id="AWJ5BOIz6B0MpY2X4wC4gK" Name="RectangleStroke" Kind="InputPin" />
-            <Pin Id="A3KAvGQafK2Nhs3nJyOFUE" Name="Family Name" Kind="InputPin" />
             <Pin Id="DXdyRVzOvp9L8ehrX2cIBS" Name="Output" Kind="OutputPin" />
+            <Pin Id="LUYuNmom7rpPzTMsk7psqU" Name="Font Family Name" Kind="InputPin" />
             <Pin Id="MOwb96EIZWTNdVyA1JD0uQ" Name="Draw Image" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfCRDROy93MQsxAD6s2dx" Name="Aspect Ratio" Kind="OutputPin" />
+            <Pin Id="Bv6l5SLDANLPFv3LRJOFcD" Name="Font Size" Kind="InputPin" />
           </Node>
           <Node Bounds="435,361,208,76" Id="P7G4PSdGkKnLfuVuodiUJa">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -224,6 +225,7 @@
             <Pin Id="KGMnmttehKUNVWeUU7jClC" Name="Width" Kind="InputPin" />
             <Pin Id="NaZzsqiX7TbPZ6f4hlrTPG" Name="Height" Kind="InputPin" />
             <Pin Id="SVysLviHUmDOKcmbewKZvo" Name="Origin" Kind="InputPin" />
+            <Pin Id="SW2l1R8gOCtL7YCdh0oaAk" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Hg1PVaBJlF8MidjzZYpfx4" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="133,519,46,19" Id="KcUCaRkR0aUNOricGkzKbz">
@@ -243,6 +245,14 @@
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RhC5TJ7XpjWPxk3PHYndjT" Comment="Prefer Gpu" Bounds="252,140,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -284,10 +294,11 @@
         <Link Id="S7ZMLCkTVLmOBAsbOGuxxo" Ids="GRfCRDROy93MQsxAD6s2dx,NhhBALLwWCrNZboqEI2298" />
         <Link Id="JtFgZqlCCg5NxwMz2m5g3U" Ids="RZsNnlcn0JoNzc8q1LRsGd,KGMnmttehKUNVWeUU7jClC" />
         <Link Id="R05T2GSvEuoL0oAD9oLlQv" Ids="PhZFqiwP6pwLtCf8BwAumT,NaZzsqiX7TbPZ6f4hlrTPG" />
+        <Link Id="Rlnt0YznELYM5MVyEA7XDC" Ids="RhC5TJ7XpjWPxk3PHYndjT,AwHdolMlO4HNFKiGaLOGDn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0126-geaacba9216" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0126-geaacba9216" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0282-g95954a57af" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0282-g95954a57af" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

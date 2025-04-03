@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PLcmzIfwKg3MWDMnplvY34" LanguageVersion="2025.7.0-0134-g231c36fe51" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0134-g231c36fe51" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="PLcmzIfwKg3MWDMnplvY34" LanguageVersion="2025.7.0-0282-g95954a57af" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0282-g95954a57af" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -54,7 +54,7 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="H9kndca022ULl35Dq8LN0a" Comment="TargetFrameRate" Bounds="390,232,35,15" ShowValueBox="true" isIOBox="true" Value="22">
+          <Pad Id="H9kndca022ULl35Dq8LN0a" Comment="TargetFrameRate" Bounds="390,232,35,15" ShowValueBox="true" isIOBox="true" Value="25">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -121,10 +121,11 @@
             <Pin Id="EYi8JP7Vl69Pd5E8nypG3X" Name="DrawLabel" Kind="InputPin" />
             <Pin Id="UYRszMK2knRMzY71pagbAf" Name="DrawConfidence" Kind="InputPin" />
             <Pin Id="AWJ5BOIz6B0MpY2X4wC4gK" Name="RectangleStroke" Kind="InputPin" />
-            <Pin Id="A3KAvGQafK2Nhs3nJyOFUE" Name="Family Name" Kind="InputPin" />
             <Pin Id="DXdyRVzOvp9L8ehrX2cIBS" Name="Output" Kind="OutputPin" />
+            <Pin Id="A1oWjY46KboQOXlZ2D8gY2" Name="Font Family Name" Kind="InputPin" />
             <Pin Id="MOwb96EIZWTNdVyA1JD0uQ" Name="Draw Image" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfCRDROy93MQsxAD6s2dx" Name="Aspect Ratio" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="JqPVYEVeEDWPH9w36XFPAI" Name="Font Size" Kind="InputPin" />
           </Node>
           <Node Bounds="435,361,208,76" Id="P7G4PSdGkKnLfuVuodiUJa">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -213,6 +214,14 @@
           <Pad Id="J2ODAdhqKvWO2C1a6yXxAd" Comment="" Bounds="900,477,213,194" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Pips9h940iLL6MayuRs0zy" Comment="" Bounds="829,477,59,193" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Go3CzX29rucQJf02oPM5gc" Comment="" Bounds="1136,477,81,193" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ObSfEoZUI0nLztz2buylRK" Comment="Prefer Gpu" Bounds="247,100,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -248,10 +257,11 @@
         <Link Id="VHutUo733g0LoKpikQzQUE" Ids="NuZuE352gDSMWFoE3zXgFx,Ex5vtk1lVrnOscozCh9o8p" />
         <Link Id="FMs74glqf26OezPC2LgPEC" Ids="C8XbK0ewFaNPLESBHz4ZJZ,BcD6cGEpueYMFGlGWExiOn" />
         <Link Id="B6afzsG6PC9MNEVwtRhvnb" Ids="DWvuTaHmk5mMdfmFz8D3PK,DeU4x8tGPwGNR965wAgCDi" />
+        <Link Id="F0Xo4PdvuloP86kS4q1CAQ" Ids="ObSfEoZUI0nLztz2buylRK,AwHdolMlO4HNFKiGaLOGDn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0134-g231c36fe51" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0134-g231c36fe51" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0282-g95954a57af" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0282-g95954a57af" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>
