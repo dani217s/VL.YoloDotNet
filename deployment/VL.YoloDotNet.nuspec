@@ -18,7 +18,7 @@
 		<license type="expression">GPL-3.0-only</license>
 		<dependencies>
 			<dependency id="YoloDotNet" version="2.2.0" />
-			<dependency id="Microsoft.ML.OnnxRuntime.DirectML" version=" 1.20.1" />
+			<dependency id="Microsoft.ML.OnnxRuntime.DirectML" version=" 1.21.0" />
 			<dependency id="Microsoft.AI.DirectML" version="1.15.4" />			
 		</dependencies>
 		<icon>icon\nugeticon.png</icon>
@@ -31,6 +31,6 @@
 		<file src="..\lib\**" target="lib\" exclude="" />
 		<file src="..\*.vl" target="" exclude="" />
 		<file src="..\vl\**" target="vl\" exclude="" />
-		<file src="..\help\**" target="help\" exclude="**\yolov9*.onnx; **\yolov10*.onnx; **\yolov11*.onnx"/>	
+		<file src="..\help\**" target="help\" exclude="**\yolov9*.onnx; **\yolov10*.onnx; **\yolov11*.onnx; **\yolov12*.onnx"/>	
 	</files>
 </package>

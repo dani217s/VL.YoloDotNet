@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0282-g95954a57af" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0282-g95954a57af" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QpexgXTbWYmPQmgFiFG2q9" LanguageVersion="2025.7.0-0335-g7f2489e528" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0335-g7f2489e528" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -247,14 +247,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RhC5TJ7XpjWPxk3PHYndjT" Comment="Prefer Gpu" Bounds="252,140,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -294,11 +286,10 @@
         <Link Id="S7ZMLCkTVLmOBAsbOGuxxo" Ids="GRfCRDROy93MQsxAD6s2dx,NhhBALLwWCrNZboqEI2298" />
         <Link Id="JtFgZqlCCg5NxwMz2m5g3U" Ids="RZsNnlcn0JoNzc8q1LRsGd,KGMnmttehKUNVWeUU7jClC" />
         <Link Id="R05T2GSvEuoL0oAD9oLlQv" Ids="PhZFqiwP6pwLtCf8BwAumT,NaZzsqiX7TbPZ6f4hlrTPG" />
-        <Link Id="Rlnt0YznELYM5MVyEA7XDC" Ids="RhC5TJ7XpjWPxk3PHYndjT,AwHdolMlO4HNFKiGaLOGDn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0282-g95954a57af" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0282-g95954a57af" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0335-g7f2489e528" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0335-g7f2489e528" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>

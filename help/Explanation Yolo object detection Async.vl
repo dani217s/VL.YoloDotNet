@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PLcmzIfwKg3MWDMnplvY34" LanguageVersion="2025.7.0-0282-g95954a57af" Version="0.128">
-  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0282-g95954a57af" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="PLcmzIfwKg3MWDMnplvY34" LanguageVersion="2025.7.0-0335-g7f2489e528" Version="0.128">
+  <NugetDependency Id="M2bqJ0DtBf7PneBWQDaBso" Location="VL.CoreLib" Version="2025.7.0-0335-g7f2489e528" />
   <Patch Id="LohZ6lUje7CLfY7TuvUQRk">
     <Canvas Id="UOoXXZ5S2JmQAQXtx0eu18" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -214,14 +214,6 @@
           <Pad Id="J2ODAdhqKvWO2C1a6yXxAd" Comment="" Bounds="900,477,213,194" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Pips9h940iLL6MayuRs0zy" Comment="" Bounds="829,477,59,193" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Go3CzX29rucQJf02oPM5gc" Comment="" Bounds="1136,477,81,193" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="ObSfEoZUI0nLztz2buylRK" Comment="Prefer Gpu" Bounds="247,100,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="CW9TF2Bf1q0OQSj88XSIEP" Name="Create" />
         <Patch Id="QJnOA2DRhszOsCzMZY7CVi" Name="Update" />
@@ -257,11 +249,10 @@
         <Link Id="VHutUo733g0LoKpikQzQUE" Ids="NuZuE352gDSMWFoE3zXgFx,Ex5vtk1lVrnOscozCh9o8p" />
         <Link Id="FMs74glqf26OezPC2LgPEC" Ids="C8XbK0ewFaNPLESBHz4ZJZ,BcD6cGEpueYMFGlGWExiOn" />
         <Link Id="B6afzsG6PC9MNEVwtRhvnb" Ids="DWvuTaHmk5mMdfmFz8D3PK,DeU4x8tGPwGNR965wAgCDi" />
-        <Link Id="F0Xo4PdvuloP86kS4q1CAQ" Ids="ObSfEoZUI0nLztz2buylRK,AwHdolMlO4HNFKiGaLOGDn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0282-g95954a57af" />
-  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0282-g95954a57af" />
+  <NugetDependency Id="Vsghf8Rx5VGLEJsMyftbEd" Location="VL.Video" Version="2025.7.0-0335-g7f2489e528" />
+  <NugetDependency Id="B6arzWiB8DCMZ48zUxMc20" Location="VL.Skia" Version="2025.7.0-0335-g7f2489e528" />
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
 </Document>
